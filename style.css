@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template:
+    "header header header" 50px
+    "Lspace cards Rspace" 1fr
+    / 200px 1fr 250px;
+
+}
+
+.card {
+    grid-area: cards;
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(4, 1fr); 
+    gap: 5px;
+}
+
+.card section {
+    display: grid; 
+    border-radius: 5%;
+    border: 2px solid black;
+}
+.laptopCard {
+    display: grid; 
+    border-radius: 5%;
+}
+
+.laptopCard img {
+    border-radius: 5%;
+    object-fit: cover;
+}
+
+.socials{
+    display: grid; 
+    display:block;
+    margin: 5px;
+
+}
+
+.text {
+    display: grid; 
+    font-size: 12px;
+    margin: 5px;
+    
+
+}
+
+
+header {
+    grid-area: header;
+    background-color: #011434;
+}
+
+header img {
+    object-fit: cover;
+    height: 50px;
+}
